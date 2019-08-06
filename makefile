@@ -1,3 +1,5 @@
-all: main.c Sources/Menu.c
-	gcc main.c -o EXEC Sources/Menu.c
+all: main.c Sources/Gerador_Quadro.c
+	gcc main.c -o EXEC Sources/Gerador_Quadro.c
  
+run: EXEC
+	./EXEC
