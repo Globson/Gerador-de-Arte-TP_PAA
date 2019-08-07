@@ -48,7 +48,7 @@ void plota_soma(int Quant,char Quadro[20][80]){
   for(i=0;i<Quant;i++){
     x = 2+(rand()%16);
     y = 2+(rand()%76);
-    while((Quadro[x][y] != ' ') && (Quadro[x+1][y] != ' ') && (Quadro[x-1][y] != ' ') && (Quadro[x][y+1] != ' ') && (Quadro[x][y-1] != ' ')){
+    while((Quadro[x][y] != ' ') || (Quadro[x+1][y] != ' ') || (Quadro[x-1][y] != ' ') || (Quadro[x][y+1] != ' ') || (Quadro[x][y-1] != ' ')){
       x = 2+(rand()%16);
       y = 2+(rand()%76);
     }
@@ -64,7 +64,7 @@ void plota_X(int Quant,char Quadro[20][80]){
   for(i=0;i<Quant;i++){
     x = 2+(rand()%16);
     y = 2+(rand()%76);
-    while((Quadro[x][y] != ' ') && (Quadro[x+1][y] != ' ') && (Quadro[x-1][y] != ' ') && (Quadro[x][y+1] != ' ') && (Quadro[x][y-1] != ' ')){
+    while((Quadro[x][y] != ' ') || (Quadro[x+1][y+1] != ' ') || (Quadro[x-1][y-1] != ' ') || (Quadro[x-1][y+1] != ' ') || (Quadro[x+1][y-1] != ' ')){
       x = 2+(rand()%16);
       y = 2+(rand()%76);
     }
@@ -85,4 +85,6 @@ void plota_aleatorio(int Quant,char Quadro[20][80]){
   plota_soma(Q_Soma,Quadro);
   plota_X(Q_x,Quadro);
 }
-void plota_obra_aluno(int Quant,char Quadro[20][80]){}
+void plota_obra_aluno(int Quant,char Quadro[20][80]){
+
+}

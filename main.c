@@ -14,7 +14,7 @@ int main(int argc, char const *argv[])
         scanf("%d",&b);
         if(b<=0){
             b=1+(rand()%100); //pode ser q necessite diminuir.//
-            printf("\n\t -> Quantidade aleatoria gerada: %d <-",b);
+            printf("\n\t -> Quantidade aleatoria gerada: %d <-\n",b);
         }
         if(a==1){
           plota_asterisco(b,Quadro);
@@ -28,7 +28,9 @@ int main(int argc, char const *argv[])
         else if(a==4){
           plota_aleatorio(b,Quadro);
         }
-        else{}
+        else{
+          plota_obra_aluno(b,Quadro);
+        }
         imprime_quadro(Quadro);
     }
     return 0;
