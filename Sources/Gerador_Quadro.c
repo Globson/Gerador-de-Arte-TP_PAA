@@ -88,11 +88,11 @@ void plota_aleatorio(int Quant,char Quadro[20][80]){
 void plota_obra_aluno(int Quant,char Quadro[20][80]){
   int i,x,y;
   for(i=0;i<Quant;i++){
-    x = 2+(rand()%16);
-    y = 2+(rand()%76);
-    while((Quadro[x][y] != ' ') || (Quadro[x][y+1] != ' ') || (Quadro[x][y-1] != ' ') || (Quadro[x+1][y+2] != ' ') || (Quadro[x+1][y-2] != ' ') || (Quadro[x-1][y+2] != ' ') || (Quadro[x-1][y-2] != ' ')){
-      x = 2+(rand()%16);
-      y = 2+(rand()%76);
+    x = 3+(rand()%14);
+    y = 4+(rand()%72);
+    while((Quadro[x][y] != ' ') || (Quadro[x][y+1] != ' ') || (Quadro[x][y-1] != ' ') || (Quadro[x+1][y+2] != ' ') || (Quadro[x+1][y-2] != ' ') || (Quadro[x-1][y+2] != ' ') || (Quadro[x-1][y-2] != ' ') || (Quadro[x][y+3] != ' ') || (Quadro[x][y-3] != ' ') || (Quadro[x+2][y] != ' ') || (Quadro[x-2][y] != ' ')){
+      x = 3+(rand()%14);
+      y = 4+(rand()%72);
     }
     Quadro[x][y]='&';
     Quadro[x][y+1]='S';
@@ -101,5 +101,9 @@ void plota_obra_aluno(int Quant,char Quadro[20][80]){
     Quadro[x+1][y-2]='*';
     Quadro[x-1][y+2]='*';
     Quadro[x-1][y-2]='*';
+    Quadro[x][y+3]='*';
+    Quadro[x][y-3]='*';
+    Quadro[x+2][y]='*';
+    Quadro[x-2][y]='*';
   }
 }
