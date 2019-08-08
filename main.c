@@ -13,7 +13,7 @@ int main(int argc, char const *argv[])
         printf("\nDigite a quantidade de figuras (menor ou igual a zero para aleatorio):");
         scanf("%d",&b);
         if(b<=0){
-            b=1+(rand()%100); //pode ser q necessite diminuir.//
+            b=1+(rand()%100); 
             printf("\n\t -> Quantidade aleatoria gerada: %d <-\n",b);
         }
         if(a==1){
