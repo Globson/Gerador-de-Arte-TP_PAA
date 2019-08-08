@@ -7,7 +7,7 @@ void menu(){
     printf("\n2 - Simbolo de soma com asteriscos.");
     printf("\n3 - Letra X com asteriscos.");
     printf("\n4 - Figuras aleatorias.");
-    printf("\n5 - Arte do Aluno\n");
+    printf("\n5 - Arte do Aluno.\n");
 }
 void inicia_quadro(char Quadro[20][80]){
     int i,j;
@@ -85,10 +85,10 @@ void plota_aleatorio(int Quant,char Quadro[20][80]){
   plota_soma(Q_Soma,Quadro);
   plota_X(Q_x,Quadro);
 }
-void plota_obra_aluno(int Quant,char Quadro[20][80]){
+void plota_obra_aluno(int Quant,char Quadro[20][80]){ //Figura escolhida possui duas letras "S" referenciando o primeiro e ultimo nome do aluno.//
   int i,x,y;
   for(i=0;i<Quant;i++){
-    x = 3+(rand()%14);
+    x = 3+(rand()%14); //Intervalo de numeros randomicos otimizado para reduzir possiveis ciclos em while abaixo.//
     y = 4+(rand()%72);
     while((Quadro[x][y] != ' ') || (Quadro[x][y+1] != ' ') || (Quadro[x][y-1] != ' ') || (Quadro[x+1][y+2] != ' ') || (Quadro[x+1][y-2] != ' ') || (Quadro[x-1][y+2] != ' ') || (Quadro[x-1][y-2] != ' ') || (Quadro[x][y+3] != ' ') || (Quadro[x][y-3] != ' ') || (Quadro[x+2][y] != ' ') || (Quadro[x-2][y] != ' ')){
       x = 3+(rand()%14);
