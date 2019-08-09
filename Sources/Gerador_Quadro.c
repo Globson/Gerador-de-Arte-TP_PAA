@@ -107,9 +107,9 @@ void plota_aleatorio(int Quant,char Quadro[20][80]){  //Função para criar quad
 }
 void plota_obra_aluno(int Quant,char Quadro[20][80]){ //Figura escolhida possui duas letras "S" referenciando o primeiro e ultimo nome do aluno.//
   int i,x,y;
-  if(Quant>57){  //Limitando quantidade da arte do aluno de acordo com testes de limite de quantidades efetuados.
-    printf("\n\tQuantidade excede capacidade do quadro!! Alternando \n\tpara o limite seguro da quantidade da figura -> 57\n");
-    Quant = 57;
+  if(Quant>55){  //Limitando quantidade da arte do aluno de acordo com testes de limite de quantidades efetuados.
+    printf("\n\tQuantidade excede capacidade do quadro!! Alternando \n\tpara o limite seguro da quantidade da figura -> 55\n");
+    Quant = 55;
   }
   for(i=0;i<Quant;i++){
     x = 3+(rand()%14);      //Intervalo de numeros randomicos otimizado para reduzir possiveis ciclos em while abaixo.//
