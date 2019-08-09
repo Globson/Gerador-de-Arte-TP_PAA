@@ -35,7 +35,7 @@ int main(int argc, char const *argv[])
                 printf("\n\tValor invalido!\n");
               }
             }
-            if(c == 0){  //Caso o usuario opte por nao, programa descarta valores e finaliza.
+            if(c == 0){  //Caso o usuario opte por nao, o programa descarta valores.
               break;
             }
           }
@@ -56,7 +56,7 @@ int main(int argc, char const *argv[])
                 printf("\n\tValor invalido!\n");
               }
             }
-            if(c == 0){  //Caso o usuario opte por nao, programa descarta valores e finaliza.
+            if(c == 0){  //Caso o usuario opte por nao, o programa descarta valores.
               break;
             }
           }
@@ -77,7 +77,7 @@ int main(int argc, char const *argv[])
                 printf("\n\tValor invalido!\n");
               }
             }
-            if(c == 0){  //Caso o usuario opte por nao, programa descarta valores e finaliza.
+            if(c == 0){  //Caso o usuario opte por nao, o programa descarta valores.
               break;
             }
           }
@@ -98,7 +98,7 @@ int main(int argc, char const *argv[])
                 printf("\n\tValor invalido!\n");
               }
             }
-            if(c == 0){  //Caso o usuario opte por nao, programa descarta valores e finaliza.
+            if(c == 0){  //Caso o usuario opte por nao, o programa descarta valores.
               break;
             }
           }
@@ -119,7 +119,7 @@ int main(int argc, char const *argv[])
                 printf("\n\tValor invalido!\n");
               }
             }
-            if(c == 0){  //Caso o usuario opte por nao, programa descarta valores e finaliza.
+            if(c == 0){  //Caso o usuario opte por nao, o programa descarta valores.
               break;
             }
           }
@@ -134,7 +134,7 @@ int main(int argc, char const *argv[])
             printf("\n\tValor invalido!\n");
           }
         }
-        if(d == 0){  //Caso o usuario opte por nao, programa descarta valores e finaliza.
+        if(d == 0){  //Caso o usuario opte por nao, o programa finaliza.
           break;
         }
   }
